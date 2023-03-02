@@ -3,8 +3,8 @@ module.exports = {
   verbose: true,
   preset: 'ts-jest',
   testEnvironment: 'node',
+  moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx']
   modulePaths: ['<rootDir>/src'],
-  // collectCoverageFrom: ['**/*.{js,jsx}', '!**/node_modules/**', '!**/vendor/**', '!*.d.ts'],
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['<rootDir>/dist/', '/node_modules/'],
 };
