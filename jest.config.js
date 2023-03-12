@@ -9,7 +9,9 @@ module.exports = {
     'src/**/*.ts',
     //     '!*d.ts',
   ],
-  coveragePathIgnorePatterns: ['/node_modules/', '*.d.ts'],
+  coveragePathIgnorePatterns: ['/node_modules/',
+  //  '*.d.ts'
+  ],
   testEnvironment: 'node',
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
 
