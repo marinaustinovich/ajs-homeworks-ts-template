@@ -2,9 +2,15 @@
 module.exports = {
   verbose: true,
   preset: 'ts-jest',
+   coverageDirectory: '<rootDir>/coverage/',
+  
+    collectCoverage: true,
+    collectCoverageFrom: [
+       'src/**/*.ts', 
+      '!dist/**/*d.ts'
+    ],
+  coveragePathIgnorePatterns: ['/node_modules/', '*.d.ts'],
   testEnvironment: 'node',
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
-  // modulePaths: ['<rootDir>/src'],
-  coverageDirectory: 'coverage',
-  coveragePathIgnorePatterns: ['<rootDir>/dist/', '/node_modules/', '*.d.ts'],
+ 
 };
