@@ -7,7 +7,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts',
-    '!*d.ts',
+//     '!*d.ts',
   ],
   coveragePathIgnorePatterns: ['/node_modules/', '*.d.ts'],
   testEnvironment: 'node',
