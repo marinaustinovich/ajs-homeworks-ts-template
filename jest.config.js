@@ -9,7 +9,7 @@ module.exports = {
     'src/**/*.ts',
     //     '!*d.ts',
   ],
-  coveragePathIgnorePatterns: ['/node_modules/',
+  coveragePathIgnorePatterns: ['/node_modules/', '/dist/',
   //  '*.d.ts'
   ],
   testEnvironment: 'node',
