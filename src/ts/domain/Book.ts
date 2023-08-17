@@ -1,15 +1,5 @@
-import Buyable from './Buyable';
+import Buyable from "./Buyable";
 
-/**
- * @module user
- */
-
-/**
- * Load user info by id
- *
- * @param {number} id user id
- * @returns {Object} user info
- */
 export default class Book implements Buyable {
   constructor(
     readonly id: number,
@@ -17,6 +7,6 @@ export default class Book implements Buyable {
     readonly author: string,
     readonly price: number,
     readonly pages: number,
-    readonly count = 1,
-  ) { }
+    readonly count = 1
+  ) {}
 }

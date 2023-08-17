@@ -1,4 +1,4 @@
-import Buyable from './Buyable';
+import Buyable from "./Buyable";
 
 export default class Device implements Buyable {
   constructor(
@@ -6,11 +6,11 @@ export default class Device implements Buyable {
     readonly name: string,
     readonly price: number,
     readonly year: number | string,
-    public count = 1,
+    public count = 1
   ) {}
 
   add(): void {
-    this.count += 1
+    this.count += 1;
   }
 
   delete(): void {

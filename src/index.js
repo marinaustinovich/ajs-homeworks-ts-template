@@ -1,2 +1,6 @@
 import './css/style.css';
-import './ts/app.ts';
+
+// eslint-disable-next-line import/no-unresolved, import/extensions
+import './ts/app';
+
+// TODO: write your code in app.ts
