@@ -3,7 +3,7 @@ export default class Cart {
   private _items: Buyable[] = [];
 
   add(item: Buyable): void {
-    if (!this._items.find((el) => el.id === item.id)) {
+    if (!this._items.some((el) => el.id === item.id)) {
       this._items.push(item);
     }
   }
@@ -13,11 +13,7 @@ export default class Cart {
   }
 
   countTotal(): number {
-    let sum: number = 0;
-    this._items.forEach((item: Buyable) => {
-      sum += item.price * item.count;
-    });
-    return sum;
+    return this._items.reduce((sum, item) => sum + item.price * item.count, 0);
   }
 
   countTotalWithDiscount(discount: number): number {
